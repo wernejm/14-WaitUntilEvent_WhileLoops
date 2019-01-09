@@ -3,13 +3,13 @@ This module demonstrates lets you practice INPUT from the CONSOLE.
 
 Authors: David Mutchler, Vibha Alangar, Matt Boutell, Dave Fisher,
          Mark Hays, Amanda Stouder, Aaron Wilkin, their colleagues,
-         and PUT_YOUR_NAME_HERE.
-"""  # TODO: 1. PUT YOUR NAME IN THE ABOVE LINE.
+         and James Werne.
+"""  # DONE: 1. PUT YOUR NAME IN THE ABOVE LINE.
 
 
 def main():
     """ TESTs the functions in this module (by calling them). """
-    double_a_float()
+    # double_a_float()
     print_an_integer_many_times()
     print_an_integer_many_times_on_one_row()
     input_it_all()
@@ -31,9 +31,13 @@ def double_a_float():
          -6.28
     """
     # -------------------------------------------------------------------------
-    # TODO: 2. Implement and test this function.
+    # DONE: 2. Implement and test this function.
     #   The testing code is already written for you (above).
     # -------------------------------------------------------------------------
+
+    x = float(input('Please enter a float here: '))
+    x = 2*x
+    print(x)
 
 
 def print_an_integer_many_times():
@@ -65,6 +69,10 @@ def print_an_integer_many_times():
     # TODO: 3. Implement and test this function.
     #   The testing code is already written for you (above).
     # -------------------------------------------------------------------------
+
+    x = int(input('Enter an integer here: '))
+    for k in range(0, x + 1)
+        print(2*x)
 
 
 def print_an_integer_many_times_on_one_row():
