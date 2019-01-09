@@ -6,12 +6,13 @@ Authors: David Mutchler, Vibha Alangar, Matt Boutell, Dave Fisher,
          and James Werne.
 """  # DONE: 1. PUT YOUR NAME IN THE ABOVE LINE.
 
+import math
 
 def main():
     """ TESTs the functions in this module (by calling them). """
     # double_a_float()
-    print_an_integer_many_times()
-    print_an_integer_many_times_on_one_row()
+    # print_an_integer_many_times()
+    # print_an_integer_many_times_on_one_row()
     input_it_all()
 
 
@@ -66,12 +67,12 @@ def print_an_integer_many_times():
          10
     """
     # -------------------------------------------------------------------------
-    # TODO: 3. Implement and test this function.
+    # DONE: 3. Implement and test this function.
     #   The testing code is already written for you (above).
     # -------------------------------------------------------------------------
 
     x = int(input('Enter an integer here: '))
-    for k in range(0, x + 1)
+    for k in range(0, x + 1):
         print(2*x)
 
 
@@ -89,12 +90,20 @@ def print_an_integer_many_times_on_one_row():
          1010101010
     """
     # -------------------------------------------------------------------------
-    # TODO: 4. Implement and test this function.
+    # DONE: 4. Implement and test this function.
     #   The testing code is already written for you (above).
     #
     # HINT: One way to print on a SINGLE line is to build up a string
     #       and then print that (single) string.
     # -------------------------------------------------------------------------
+
+    conc = ''
+    x = int(input('Enter an integer here: '))
+    for k in range(0, x):
+        conc = conc + str(2*x)
+
+    print(conc)
+
 
 
 def input_it_all():
@@ -129,9 +138,18 @@ def input_it_all():
          Peace & Love.
     """
     # -------------------------------------------------------------------------
-    # TODO: 5. Implement and test this function.
+    # DONE: 5. Implement and test this function.
     #   The testing code is already written for you (above).
     # -------------------------------------------------------------------------
+
+    x = float(input('Enter a float here: '))
+    y = int(input('Enter an integer here: '))
+    z = input('Enter a string here: ')
+
+    for k in range(0, y):
+        print(math.sqrt(x))
+    for j in range(0, y):
+        print(z)
 
 
 # -----------------------------------------------------------------------------
